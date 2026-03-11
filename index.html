@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inter-Collegiate Function Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Inter-Collegiate Function</h1>
+        <p>Registration Form</p>
+
+        <form id="registrationForm">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>College Name</label>
+            <input type="text" id="college" placeholder="Enter college name" required>
+
+          
+
+           
+            <label>Department</label>
+            <input type="text" id="department" placeholder="Enter department" required>
+
+            <label>Year of Study</label>
+            <select id="year" required>
+                <option value="">-- Select Year --</option>
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Final Year</option>
+            </select>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            
+
+
+
+<label>Mobile Number</label>
+             <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+
+            <label>Event Name</label>
+            <select id="event" required>
+                <option value="">-- Select Event --</option>
+                <option>Paper Presentation</option>
+                <option>Project Expo</option>
+                <option>Technical Quiz</option>
+                <option>Debugging</option>
+                <option>Cultural Event</option>
+            </select>
+
+            <label>College Address</label>
+            <textarea rows="3" placeholder="Enter address"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset">Clear</button>
+            </div>
+</form>
+
+      
+
+
+ <footer>
+            © 2026 Inter-Collegiate Event Committee
+        </footer>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
